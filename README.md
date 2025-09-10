@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -67,3 +68,7 @@ export default tseslint.config([
   },
 ])
 ```
+=======
+# ds-react-app
+Sample react app which use ds-stencil-react-monorepo componentes made.
+>>>>>>> 66e469a6bc683a6f7c4bd3fa8ee9b8d3b7b9be80
