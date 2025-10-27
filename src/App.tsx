@@ -1,9 +1,18 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import { InputComponent, MyComponent } from "react-library";
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import {
+  InputComponent,
+  ModalComponent,
+  MyComponent,
+  TestComponent,
+} from 'react-library';
 
 function App() {
+  const onInput = (event) => {
+    console.log(event);
+  };
+
   return (
     <div className="grid-container">
       <div>
@@ -24,7 +33,18 @@ function App() {
           <MyComponent first="Name" middle="Second" last="Lastname" />
         </div>
         <div>
-          <InputComponent text_label="Nombre" />
+          <InputComponent text_label="Nombre" onInputTarget={onInput} />
+        </div>
+        <div>
+          <TestComponent text_button="Save" />
+        </div>
+        <div>
+          <ModalComponent is_open title="prueba">
+            <div>
+              <p>Esta es una prueba del modal</p>
+              <button>Save</button>
+            </div>
+          </ModalComponent>
         </div>
       </div>
     </div>
