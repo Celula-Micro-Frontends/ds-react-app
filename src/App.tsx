@@ -3,8 +3,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { InputComponent, MyComponent, TooltipComponent } from "react-library";
 
-const text =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus, erat non faucibus ultrices, felis velit laoreet nibh, a mattis dolor justo sed purus.";
+const text = "Tooltip Text.";
 
 function App() {
   return (
