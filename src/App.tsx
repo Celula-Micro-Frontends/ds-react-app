@@ -1,7 +1,10 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { InputComponent, MyComponent } from "react-library";
+import { InputComponent, MyComponent, TooltipComponent } from "react-library";
+
+const text =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus, erat non faucibus ultrices, felis velit laoreet nibh, a mattis dolor justo sed purus.";
 
 function App() {
   return (
@@ -25,6 +28,11 @@ function App() {
         </div>
         <div>
           <InputComponent text_label="Nombre" />
+        </div>
+        <div>
+          <TooltipComponent text={text} alignment="bottom">
+            AQUI ESTA EL TOOLTIP
+          </TooltipComponent>
         </div>
       </div>
     </div>
