@@ -48,3 +48,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
+.custom-loader-container {
+  margin-top: 8rem;
+  display: flex;
+  gap: 20px;
+}
